@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.form-container {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Header */
+
+header {
+    color: #efdb0f;
+    background: #de8704;
+    padding: 10px;
+}
+
+/* Header end */
+
+/*main*/
+main {
+    background: #222536;
+    padding: 5px;
+    color: #efdb0f;
+}
+
+main > div {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+main > div > label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.input-field {
+    width: 55%;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date > select {
+    width: auto;
+}
+
+/*main end*/
+footer {
+    background: #de8704;
+    text-align: right;
+    padding: 10px;
+}
+
+.btn {
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background: #418bca;
+}
+
+.green {
+    background: #5ab85c;
+}
+
+.error {
+    color: red;
+    margin-left: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}

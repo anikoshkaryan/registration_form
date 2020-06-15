@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="form-container">
+    <form id="registration_form" >
+        <header>
+            <h3>Sign Up</h3>
+        </header>
+        <main>
+            <div>
+                <label for="fname">First Name</label>
+                <div class="input-field">
+                    <input type="text" id="fname" name="firstName" placeholder="Enter First Name" >
+
+                </div>
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <div class="input-field">
+                    <input type="text" id="lname" name="lastName" placeholder="Enter Last Name">
+                </div>
+            </div>
+            <div>
+                <label for="sname">Screen Name</label>
+                <div class="input-field">
+                    <input type="text" id="sname" name="screenName" placeholder="Enter Screen Name">
+
+                </div>
+            </div>
+            <div>
+                <label>Date Of Birth</label>
+                <div class="input-field date" id="date">
+                    <select name="month" title="month"></select>
+                    <select name="day" title="day"></select>
+                    <select name="year" title="year"></select>
+
+                </div>
+            </div>
+            <div>
+                <label>Gender</label>
+                <div class="input-field" id="gender">
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        <span>Male</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" >
+                        <span>Female</span>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <div class="input-field">
+                    <select name="country" id="country">
+                        <option selected disabled value="">Choose Country</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <div class="input-field">
+                    <input type="text" id="email" name="email" placeholder="Enter E-mail">
+
+                </div>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <div class="input-field">
+                    <input type="text" id="phone" name="phone" placeholder="Enter Phone">
+
+                </div>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <div class="input-field">
+                    <input type="password" id="password" name="password">
+                </div>
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="input-field">
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+
+                </div>
+            </div>
+            <div>
+                <label></label>
+                <div class="input-field" id="agreement">
+                    <label><input type="checkbox" name="terms"
+                                  value="agree" > <span>I agree to the terms of Use</span></label>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <button class="btn green" type="submit">Submit</button>
+            <button class="btn" type="reset">Cancel</button>
+        </footer>
+    </form>
+</section>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jquery.inputmask.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
